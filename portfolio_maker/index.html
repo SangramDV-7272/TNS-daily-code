@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Maker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container two-column">
+    <!-- Left side: Form -->
+    <div class="left">
+      <h1>Portfolio Maker</h1>
+      <form id="portfolioForm">
+        <!-- Profile & Basic Info -->
+        <input type="file" id="photo" accept="image/*">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="title" placeholder="Title / Profession" required>
+        <textarea id="bio" placeholder="Short Bio" required></textarea>
+
+        <!-- Additional Sections -->
+        <input type="text" id="education" placeholder="Education Details">
+        <textarea id="experience" placeholder="Work Experience"></textarea>
+        <textarea id="projects" placeholder="Project Details"></textarea>
+
+        <!-- Skills & Links -->
+        <input type="text" id="skills" placeholder="Skills (comma separated)">
+        <input type="url" id="linkedin" placeholder="LinkedIn URL">
+        <input type="url" id="github" placeholder="GitHub URL">
+      </form>
+    </div>
+
+    <!-- Right side: Portfolio Preview -->
+    <div class="right">
+      <h2>Portfolio Preview</h2>
+      <div id="portfolioPreview" class="portfolio">
+        Fill in the details to preview your portfolio here.
+      </div>
+      <button id="downloadBtn" class="download-btn">Download Portfolio</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
